@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match fix</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="header">
+        <nav class="nav">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#"><i class="bi-telephone-fill"></i>&nbsp;+1(21) 234 4547</a></li>
+                    <li><a href="#"><i class="bi-envelope-open-fill"></i>&nbsp;info@exmaple.com</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="nav1">
+            <a href="index.html"><img src="./assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()" style="color: #fff;"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()" style="color: #fff;"></i>
+        </nav>
+        <div class="text-box">
+            <p class="heading-one">Matrimonial Search.</p>
+            <p class="heading-two">Best Matching Couples</p>
+            <p class="para">Match Fix, The World's Leading Matchmaking Service, was founded <br/>with a simple objective - to help people find happiness.</p>
+            <a href="#" class="hero-btn">Read More</a>
+        </div>
+
+        <div class="register-box">
+            <p class="heading-form">Register & join our Matrimony</p>
+            <form id="form">
+                <input type="text" class="input-field" placeholder="Your Name">
+                <input type="email" class="input-field" placeholder="Your Email-Id">
+                <input type="tel" class="input-field" placeholder="Contact Number">
+                <label for="gender"></label>
+                <select class="select-field" name="gender" id="gender">
+                    <option value="gender">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br/>
+            <a href="#" class="hero-btn-form">Get Started</a>
+            </form>
+            <p class="form-para">By registering, you agree to our <span style="color:#f81894;">Terms & Condition</span></p>
+        </div>
+    </section>
+
+    <p class="p">Recently Married Happy Couples</p>
+   
+    <div class="card-group">
+        <div class="card">
+            <img src="./assets/images/card1.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+          <img src="./assets/images/card3.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+          <img src="./assets/images/card5.jpeg" class="card-img-top" alt="...">
+        </div>
+        <div class="card">
+            <img src="./assets/images/card4.jpeg" class="card-img-top" alt="...">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+          <div class="card1">
+            <div class="card-body">
+              <p class="card-text">Match Fix, The World's Leading Matchmaking Service, was founded with a simple objective - to help people find happiness.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card2">
+            <div class="card-body">
+                <img src="./assets/images/card.jpg" class="card-img-top" alt="..." style="width:55%; align-items: center;">
+                </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card3">
+              <div class="card-body">
+                <p class="card-text">Match Fix, The World's Leading Matchmaking Service, was founded with a simple objective - to help people find happiness.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    <br/><br/>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-415px";
+        }
+    </script>
+
+</body>
+</html>
